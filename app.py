@@ -7,11 +7,11 @@ st.title("🚢 Titanic Fare Predictor")
 st.subheader("Enter Passenger detail below to predict Total Fare")
 
 ## Loading all pickle files
-model = pickle.load(open('artifact\model.pkl','rb'))
-lbl_ticket = pickle.load(open('artifact\lbl_ticket.pkl','rb'))
-ohe_embark = pickle.load(open('artifact\ohe_embark.pkl','rb'))
-ohe_sex = pickle.load(open('artifact\ohe_sex.pkl','rb'))
-scalar = pickle.load(open('artifact\scalar.pkl','rb'))
+model = pickle.load(open('artifact\\model.pkl','rb'))
+lbl_ticket = pickle.load(open('artifact\\lbl_ticket.pkl','rb'))
+ohe_embark = pickle.load(open('artifact\\ohe_embark.pkl','rb'))
+ohe_sex = pickle.load(open('artifact\\ohe_sex.pkl','rb'))
+scalar = pickle.load(open('artifact\\scalar.pkl','rb'))
 
 ## Collecting inputs (APP UI)
 survived = st.pills("Survived 0 = No, 1 = Yes", [0, 1])
